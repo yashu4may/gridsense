@@ -36,12 +36,12 @@ The project is broken into three lightweight, 100% Python components to ensure m
 
 |File|Role|Responsibility|
 |-|-|-|
-|`simulation.py`|**The Physics Engine**|Generates the virtual neighborhood. Tracks `current\\\_temp`, manages AC surges, and calculates the live aggregate power load.|
-|`edge\\\_node.py`|**The Virtual Brain**|Acts as the simulated local transformer microchip. Receives the AI's prediction, checks if the 100kW threshold is breached, and calculates the fairest house to pause based on historical `cut\\\_counts`.|
+|`simulation.py`|**The Physics Engine**|Generates the virtual neighborhood. Tracks `current_temp`, manages AC surges, and calculates the live aggregate power load.|
+|`edge_node.py`|**The Virtual Brain**|Acts as the simulated local transformer microchip. Receives the AI's prediction, checks if the 100kW threshold is breached, and calculates the fairest house to pause based on historical `cut_counts`.|
 |`app.py`|**The Command Center**|The Streamlit frontend. Runs the continuous data loop, executes the scikit-learn predictive model, handles UI rendering, and logs the AI's decision-making process.|
 
 ```
-\\\[ simulation.py ]  ──►  \\\[ app.py (AI Predictor) ]  ──►  \\\[ edge\\\_node.py ]
+[ simulation.py ]  ──►  [ app.py (AI Predictor) ]  ──►  [ edge_node.py ]
   50 Virtual Houses         Linear Regression               Fairness Scheduler
   Heatwave Physics          Ghost Line Forecast             Min-Cut Selection
   V2G Discharging           Threshold Check                 Geyser Pause/Resume
@@ -52,7 +52,7 @@ The project is broken into three lightweight, 100% Python components to ensure m
 
 \---
 
-🚀 Installation \& Quick Start
+### 🚀 Installation \& Quick Start
 
 🔥 Try it right now: https://gridsense-esp32-ezjvvsfaakashvb5sfxssn.streamlit.app/
 
