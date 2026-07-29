@@ -58,6 +58,10 @@ The project is broken into three lightweight, 100% Python components to ensure m
 
 GridSense is also designed to run completely locally on your own machine without complex database setups.
 
+## 🎥 GridSense Demo Video
+
+https://drive.google.com/file/d/1jkNMzStuFfsnSDN0qe4BXRkxuVNcVk5m/view?usp=drive_link
+
 #### 1\. Clone the Repository
 
 ```bash
